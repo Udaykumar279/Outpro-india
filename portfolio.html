@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & Case Studies - Outpro.India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+        
+        .page-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .case-study-detail {
+            padding: 4rem 0;
+        }
+        
+        .case-study-detail:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        
+        .case-study-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .case-study-header h2 {
+            font-size: 2.5rem;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .case-study-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .case-study-meta span {
+            color: #6b7280;
+            font-weight: 500;
+        }
+        
+        .case-study-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .case-study-image img {
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .case-study-text h3 {
+            font-size: 1.5rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        
+        .case-study-text p {
+            color: #6b7280;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .challenge-solution {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+        
+        .challenge-solution h4 {
+            color: #3b82f6;
+            font-size: 1.125rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .result-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .result-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #3b82f6;
+            margin-bottom: 0.5rem;
+        }
+        
+        .result-label {
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+        
+        @media (max-width: 768px) {
+            .case-study-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .case-study-header h2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <h1 class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Outpro<span>.India</span></a></h1>
+                    <ul class="nav-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Portfolio & Case Studies</h1>
+                <p>Real results for real businesses - See how we've helped our clients succeed</p>
+            </div>
+        </section>
+
+        <!-- Case Study 1: Retail Digital Transformation -->
+        <section id="case1" class="case-study-detail">
+            <div class="container">
+                <div class="case-study-header">
+                    <h2>Retail Digital Transformation</h2>
+                    <div class="case-study-meta">
+                        <span>📍 Industry: E-commerce & Retail</span>
+                        <span>📅 Duration: 12 months</span>
+                        <span>👥 Team Size: 15 consultants</span>
+                    </div>
+                </div>
+                
+                <div class="case-study-content">
+                    <div class="case-study-image">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Retail Transformation">
+                    </div>
+                    <div class="case-study-text">
+                        <h3>Client Overview</h3>
+                        <p>A leading retail chain with 200+ stores across India, facing declining foot traffic and struggling to compete with online retailers. The company needed a comprehensive digital transformation to remain competitive.</p>
+                        
+                        <div class="challenge-solution">
+                            <h4>The Challenge</h4>
+                            <p>Traditional brick-and-mortar operations with minimal online presence, outdated inventory management, and poor customer data utilization. Sales declining 15% year-over-year.</p>
+                        </div>
+                        
+                        <div class="challenge-solution">
+                            <h4>Our Solution</h4>
+                            <p>Implemented omnichannel retail strategy, developed e-commerce platform, integrated inventory management system, and created personalized customer experience using AI-driven recommendations.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">250%</div>
+                        <div class="result-label">Online Sales Increase</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">40%</div>
+                        <div class="result-label">Cost Reduction</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">85%</div>
+                        <div class="result-label">Customer Satisfaction</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">3M+</div>
+                        <div class="result-label">New Online Customers</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study 2: Manufacturing Process Optimization -->
+        <section id="case2" class="case-study-detail">
+            <div class="container">
+                <div class="case-study-header">
+                    <h2>Manufacturing Process Optimization</h2>
+                    <div class="case-study-meta">
+                        <span>📍 Industry: Manufacturing & Operations</span>
+                        <span>📅 Duration: 9 months</span>
+                        <span>👥 Team Size: 12 consultants</span>
+                    </div>
+                </div>
+                
+                <div class="case-study-content">
+                    <div class="case-study-text">
+                        <h3>Client Overview</h3>
+                        <p>A major automotive parts manufacturer with production facilities across multiple locations, experiencing high operational costs and quality control issues affecting profitability.</p>
+                        
+                        <div class="challenge-solution">
+                            <h4>The Challenge</h4>
+                            <p>Inefficient production workflows, high waste rates (18%), inconsistent quality across facilities, and rising operational costs threatening competitiveness in the market.</p>
+                        </div>
+                        
+                        <div class="challenge-solution">
+                            <h4>Our Solution</h4>
+                            <p>Implemented Lean Six Sigma methodologies, automated quality control systems, optimized supply chain logistics, and established real-time production monitoring dashboards.</p>
+                        </div>
+                    </div>
+                    <div class="case-study-image">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg" alt="Manufacturing Optimization">
+                    </div>
+                </div>
+                
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">35%</div>
+                        <div class="result-label">Cost Reduction</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">60%</div>
+                        <div class="result-label">Waste Reduction</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">92%</div>
+                        <div class="result-label">Quality Score</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">25%</div>
+                        <div class="result-label">Productivity Increase</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study 3: Financial Services Modernization -->
+        <section id="case3" class="case-study-detail">
+            <div class="container">
+                <div class="case-study-header">
+                    <h2>Financial Services Modernization</h2>
+                    <div class="case-study-meta">
+                        <span>📍 Industry: Finance & Technology</span>
+                        <span>📅 Duration: 18 months</span>
+                        <span>👥 Team Size: 20 consultants</span>
+                    </div>
+                </div>
+                
+                <div class="case-study-content">
+                    <div class="case-study-image">
+                        <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Financial Services">
+                    </div>
+                    <div class="case-study-text">
+                        <h3>Client Overview</h3>
+                        <p>A regional bank with 5 million customers, operating on legacy systems and facing pressure from digital-first competitors. Customer satisfaction scores were declining, and operational costs were rising.</p>
+                        
+                        <div class="challenge-solution">
+                            <h4>The Challenge</h4>
+                            <p>Outdated core banking system, poor mobile experience, long processing times for transactions, and inability to offer modern digital services expected by customers.</p>
+                        </div>
+                        
+                        <div class="challenge-solution">
+                            <h4>Our Solution</h4>
+                            <p>Migrated to cloud-based banking platform, developed mobile-first customer experience, implemented AI-powered chatbot for customer service, and automated back-office processes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">40%</div>
+                        <div class="result-label">Customer Satisfaction ↑</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">70%</div>
+                        <div class="result-label">Faster Processing</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">2M+</div>
+                        <div class="result-label">Mobile App Users</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">50%</div>
+                        <div class="result-label">Support Cost Reduction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study 4: Healthcare Digital Platform -->
+        <section id="case4" class="case-study-detail">
+            <div class="container">
+                <div class="case-study-header">
+                    <h2>Healthcare Digital Platform</h2>
+                    <div class="case-study-meta">
+                        <span>📍 Industry: Healthcare & Technology</span>
+                        <span>📅 Duration: 15 months</span>
+                        <span>👥 Team Size: 18 consultants</span>
+                    </div>
+                </div>
+                
+                <div class="case-study-content">
+                    <div class="case-study-text">
+                        <h3>Client Overview</h3>
+                        <p>A network of 50+ hospitals and clinics seeking to improve patient care coordination, reduce administrative burden, and enable telemedicine capabilities in response to changing healthcare needs.</p>
+                        
+                        <div class="challenge-solution">
+                            <h4>The Challenge</h4>
+                            <p>Fragmented patient records across facilities, manual appointment scheduling, no telemedicine infrastructure, and poor communication between healthcare providers.</p>
+                        </div>
+                        
+                        <div class="challenge-solution">
+                            <h4>Our Solution</h4>
+                            <p>Developed unified electronic health records system, implemented telemedicine platform, automated appointment management, and created patient portal for self-service.</p>
+                        </div>
+                    </div>
+                    <div class="case-study-image">
+                        <img src="https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg" alt="Healthcare Platform">
+                    </div>
+                </div>
+                
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">100K+</div>
+                        <div class="result-label">Telemedicine Consultations</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">45%</div>
+                        <div class="result-label">Admin Time Saved</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">88%</div>
+                        <div class="result-label">Patient Satisfaction</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">30%</div>
+                        <div class="result-label">No-Show Reduction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section style="background-color: #3b82f6; color: white; padding: 4rem 0; text-align: center;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to Write Your Success Story?</h2>
+                <p style="font-size: 1.25rem; margin-bottom: 2rem;">Let's discuss how we can help transform your business.</p>
+                <a href="index.html#contact" class="btn btn-secondary" style="background-color: white; color: #3b82f6; border-color: white;">Start Your Project</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Outpro<span>.India</span></h3>
+                    <p>Transforming businesses with strategic consulting and digital solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#strategy">Business Strategy</a></li>
+                        <li><a href="services.html#digital">Digital Transformation</a></li>
+                        <li><a href="services.html#optimization">Process Optimization</a></li>
+                        <li><a href="services.html#analysis">Market Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <p>Email: contact@outpro.india</p>
+                    <p>Phone: +91 22 1234 5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Outpro.India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

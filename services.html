@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Outpro.India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+        
+        .page-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-detail {
+            padding: 4rem 0;
+        }
+        
+        .service-detail:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        
+        .service-detail-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .service-detail-text h2 {
+            font-size: 2rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        
+        .service-detail-text p {
+            color: #6b7280;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+        
+        .service-features li {
+            padding: 0.75rem 0;
+            color: #4b5563;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .service-features li::before {
+            content: '✓';
+            color: #3b82f6;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        
+        .service-detail-image img {
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .service-detail-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <h1 class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Outpro<span>.India</span></a></h1>
+                    <ul class="nav-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Services</h1>
+                <p>Comprehensive solutions tailored to your business needs</p>
+            </div>
+        </section>
+
+        <!-- Business Strategy -->
+        <section id="strategy" class="service-detail">
+            <div class="container">
+                <div class="service-detail-content">
+                    <div class="service-detail-text">
+                        <h2>📊 Business Strategy</h2>
+                        <p>Our strategic consulting services help you define clear objectives, identify growth opportunities, and create actionable roadmaps for success. We work closely with your leadership team to align strategy with execution.</p>
+                        <p>Whether you're a startup looking to scale or an established enterprise seeking transformation, our strategic frameworks provide the clarity and direction you need.</p>
+                        <ul class="service-features">
+                            <li>Strategic Planning & Roadmapping</li>
+                            <li>Market Entry Strategy</li>
+                            <li>Competitive Analysis</li>
+                            <li>Business Model Innovation</li>
+                            <li>Growth Strategy Development</li>
+                            <li>Performance Metrics & KPIs</li>
+                        </ul>
+                    </div>
+                    <div class="service-detail-image">
+                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg" alt="Business Strategy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Digital Transformation -->
+        <section id="digital" class="service-detail">
+            <div class="container">
+                <div class="service-detail-content">
+                    <div class="service-detail-image">
+                        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Digital Transformation">
+                    </div>
+                    <div class="service-detail-text">
+                        <h2>💻 Digital Transformation</h2>
+                        <p>Navigate the digital landscape with confidence. Our digital transformation services modernize your operations, enhance customer experiences, and position your business for the future.</p>
+                        <p>From cloud migration to automation, we implement cutting-edge technologies that drive efficiency and innovation across your organization.</p>
+                        <ul class="service-features">
+                            <li>Cloud Migration & Infrastructure</li>
+                            <li>Process Automation</li>
+                            <li>Digital Customer Experience</li>
+                            <li>Data Analytics & BI</li>
+                            <li>Enterprise Software Solutions</li>
+                            <li>Cybersecurity Implementation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Optimization -->
+        <section id="optimization" class="service-detail">
+            <div class="container">
+                <div class="service-detail-content">
+                    <div class="service-detail-text">
+                        <h2>📈 Process Optimization</h2>
+                        <p>Eliminate inefficiencies and maximize productivity with our process optimization services. We analyze your current workflows, identify bottlenecks, and implement streamlined solutions.</p>
+                        <p>Our data-driven approach ensures measurable improvements in speed, quality, and cost-effectiveness across all business functions.</p>
+                        <ul class="service-features">
+                            <li>Workflow Analysis & Redesign</li>
+                            <li>Lean Six Sigma Implementation</li>
+                            <li>Supply Chain Optimization</li>
+                            <li>Quality Management Systems</li>
+                            <li>Cost Reduction Strategies</li>
+                            <li>Performance Improvement</li>
+                        </ul>
+                    </div>
+                    <div class="service-detail-image">
+                        <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg" alt="Process Optimization">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Analysis -->
+        <section id="analysis" class="service-detail">
+            <div class="container">
+                <div class="service-detail-content">
+                    <div class="service-detail-image">
+                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg" alt="Market Analysis">
+                    </div>
+                    <div class="service-detail-text">
+                        <h2>🎯 Market Analysis</h2>
+                        <p>Make informed decisions with comprehensive market intelligence. Our research and analysis services provide deep insights into market trends, customer behavior, and competitive dynamics.</p>
+                        <p>We deliver actionable intelligence that helps you identify opportunities, mitigate risks, and stay ahead of the competition.</p>
+                        <ul class="service-features">
+                            <li>Market Research & Segmentation</li>
+                            <li>Competitive Intelligence</li>
+                            <li>Customer Insights & Behavior</li>
+                            <li>Industry Trend Analysis</li>
+                            <li>Market Sizing & Forecasting</li>
+                            <li>Brand Positioning Studies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Change Management -->
+        <section id="change" class="service-detail">
+            <div class="container">
+                <div class="service-detail-content">
+                    <div class="service-detail-text">
+                        <h2>👥 Change Management</h2>
+                        <p>Successfully navigate organizational change with our proven change management methodologies. We help you prepare, support, and guide your teams through transformation initiatives.</p>
+                        <p>Our approach minimizes resistance, maintains productivity, and ensures sustainable adoption of new processes and technologies.</p>
+                        <ul class="service-features">
+                            <li>Change Readiness Assessment</li>
+                            <li>Stakeholder Engagement</li>
+                            <li>Communication Strategy</li>
+                            <li>Training & Development</li>
+                            <li>Organizational Design</li>
+                            <li>Culture Transformation</li>
+                        </ul>
+                    </div>
+                    <div class="service-detail-image">
+                        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg" alt="Change Management">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risk Management -->
+        <section id="risk" class="service-detail">
+            <div class="container">
+                <div class="service-detail-content">
+                    <div class="service-detail-image">
+                        <img src="https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg" alt="Risk Management">
+                    </div>
+                    <div class="service-detail-text">
+                        <h2>🔒 Risk Management</h2>
+                        <p>Protect your business with comprehensive risk management strategies. We identify potential threats, assess their impact, and develop mitigation plans to safeguard your operations.</p>
+                        <p>Our proactive approach helps you anticipate challenges, ensure compliance, and maintain business continuity in an uncertain environment.</p>
+                        <ul class="service-features">
+                            <li>Risk Assessment & Analysis</li>
+                            <li>Compliance Management</li>
+                            <li>Business Continuity Planning</li>
+                            <li>Crisis Management</li>
+                            <li>Internal Controls</li>
+                            <li>Regulatory Advisory</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section style="background-color: #3b82f6; color: white; padding: 4rem 0; text-align: center;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to Transform Your Business?</h2>
+                <p style="font-size: 1.25rem; margin-bottom: 2rem;">Let's discuss how our services can help you achieve your goals.</p>
+                <a href="index.html#contact" class="btn btn-secondary" style="background-color: white; color: #3b82f6; border-color: white;">Get Started Today</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Outpro<span>.India</span></h3>
+                    <p>Transforming businesses with strategic consulting and digital solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#strategy">Business Strategy</a></li>
+                        <li><a href="#digital">Digital Transformation</a></li>
+                        <li><a href="#optimization">Process Optimization</a></li>
+                        <li><a href="#analysis">Market Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <p>Email: contact@outpro.india</p>
+                    <p>Phone: +91 22 1234 5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Outpro.India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
