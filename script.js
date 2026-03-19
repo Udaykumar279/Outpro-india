@@ -93,7 +93,7 @@ if (contactForm) {
         };
      
         try {
-            const response = await fetch('https://outpro-india-2.vercel.app/api/register', {
+            const response = await fetch('https://outpro-india.onrender.com/api/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
